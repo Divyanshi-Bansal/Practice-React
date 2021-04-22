@@ -18,7 +18,8 @@ import ReactDOM from 'react-dom';
 
 
 ReactDOM.render(
-  [ <h1>Hello world</h1>,
+  <React.Fragment>
+   <h1>Hello world</h1>
   <p>lorem10</p>
 
- ] , document.getElementById('root'));
+  </React.Fragment>, document.getElementById('root'));
