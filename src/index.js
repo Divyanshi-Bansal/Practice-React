@@ -1,7 +1,7 @@
 import React from 'react'; //we using this module just because of we use jsx expression.
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Heading from './Practice/Heading';
 
