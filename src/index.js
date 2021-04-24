@@ -3,22 +3,41 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Heading from './Practice/Heading';
+
+const wishColor = {
+  color:"pink"
+};
+
+const time = new Date().getHours();
+
+var wish = "";
+if(time >=4 && time < 12){
+  wish = "Good Morning";
+  wishColor.color = 'green';
+}
+else if(time >=12 && time <= 16){
+  wish = "Good Afternoon";
+  wishColor.color = 'yellow';
+}
+else if(time >= 17 && time <= 19){
+  wish = "Good Evening";
+  wishColor.color = 'red';
+}
+else{
+  wish = "Good night";
+  wishColor.color = 'black';
+}
+
 
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-  <React.Fragment>
-    <h1>Practice Project-1 </h1>
-    <h2>Show the list of top netflix series</h2>
-    <ol>
-    <li>The Vampire Dairies</li>
-    <li>Dark</li>
-    <li>Hobbies</li>
-    <li>Mr Robot</li>
-    <li>The Holo Love </li>
-    </ol>
-  </React.Fragment>
+  <>
+    <Heading />
+    <h1 className="heading">Hello Mam ,<span style={wishColor}>{`${wish}`}</span></h1>
+  </>
   ,
   document.getElementById('root')
 );
@@ -27,13 +46,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-
-
-// ReactDOM.render(
-//   <React.Fragment>
-//     <h1>Hello world</h1>
-//     <p>Practicising React</p>
-//     <h2>By Divyanshi Bansal</h2>
-
-
-//   </React.Fragment>, document.getElementById('root'));
