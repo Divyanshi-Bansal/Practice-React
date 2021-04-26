@@ -19,10 +19,7 @@ ReactDOM.render(
   // </React.StrictMode>
   <>
   <Calculator/>
-    <h1>Addition of two number {Add(2,3)}</h1>
-    <h1>Subtraction of two number {Subtract(7,3)}</h1>
-    <h1>Multiplication of two number {Multiply(2,3)}</h1>
-    <h1>Division of two number {Division(7,2)}</h1>
+    
   </>
   ,
   document.getElementById('root')
