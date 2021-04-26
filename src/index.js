@@ -12,25 +12,33 @@ import Multiply from './Practice/Multiply';
 import Subtract from './Practice/Subtract';
 
 
+function Card(props){
+  return (
+    <div className='cards'>
+    <div className='card'>
+      <img src='https://upload.wikimedia.org/wikipedia/en/2/22/TVD_cast.jpg' 
+      alt='card_img' className='card_Img' />
+      <div className='card_Info'>
+        <span className='card_category'>A netflix Orignal Series</span>
+        <h3 className='card_title'>The Vampire Daries</h3>
+        <a href='https://www.netflix.com/in/' target='_blank'>
+          <button>Watch Now</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  );
+}
+
 
 ReactDOM.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
   <>
-  // <Calculator/>
-  <div className='cards'>
-  <div className='card'>
-  <img src='' alt='' className='card_Img' />
-  <div className='card_Info'>
-  <h3 className='card_title'></h3>
-  <a href='' target='_blank'>
-  <button>Watch Now</button>
-  </a>
-  </div>
-  </div>
-  </div>
-    
+  <Card imgsrc='https://upload.wikimedia.org/wikipedia/en/2/22/TVD_cast.jpg' category='A netflix Orignal Series' title='The Vampire Daries' link='https://www.netflix.com/in/' />  
+  <Card imgsrc='https://upload.wikimedia.org/wikipedia/en/2/22/TVD_cast.jpg' category='A netflix Orignal Series' title='The Vampire Daries' link='https://www.netflix.com/in/' />  
+  <Card imgsrc='https://upload.wikimedia.org/wikipedia/en/2/22/TVD_cast.jpg' category='A netflix Orignal Series' title='The Vampire Daries' link='https://www.netflix.com/in/' />  
   </>
   ,
   document.getElementById('root')
