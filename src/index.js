@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Heading from './Practice/Heading';
 import * as app1 from './Practice/App';
-// import Calculator from './Projects/Calculator';
+import Calculator from './Projects/Calculator';
 import Add from './Practice/Add';
 import Division from './Practice/Division';
 import Multiply from './Practice/Multiply';
@@ -18,10 +18,11 @@ ReactDOM.render(
   //   <App />
   // </React.StrictMode>
   <>
+  <Calculator/>
     <h1>Addition of two number {Add(2,3)}</h1>
     <h1>Subtraction of two number {Subtract(7,3)}</h1>
     <h1>Multiplication of two number {Multiply(2,3)}</h1>
-    <h1>Division of two number {Division(8,2)}</h1>
+    <h1>Division of two number {Division(7,2)}</h1>
   </>
   ,
   document.getElementById('root')
