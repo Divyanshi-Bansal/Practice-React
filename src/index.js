@@ -18,7 +18,18 @@ ReactDOM.render(
   //   <App />
   // </React.StrictMode>
   <>
-  <Calculator/>
+  // <Calculator/>
+  <div className='cards'>
+  <div className='card'>
+  <img src='' alt='' className='card_Img' />
+  <div className='card_Info'>
+  <h3 className='card_title'></h3>
+  <a href='' target='_blank'>
+  <button>Watch Now</button>
+  </a>
+  </div>
+  </div>
+  </div>
     
   </>
   ,
