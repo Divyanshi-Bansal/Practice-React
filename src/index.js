@@ -18,6 +18,7 @@ ReactDOM.render(
   //   <App />
   // </React.StrictMode>
   <div>
+  <h1 className='heading'>This is top-5 Netflix Series</h1>
   <NetflixCards imgsrc='https://upload.wikimedia.org/wikipedia/en/2/22/TVD_cast.jpg' category='A NETFLIX ORIGINAL SERIES' title='The Vampire Dairies' link='https://www.netflix.com/in/' />  
   <NetflixCards imgsrc='https://pdqwire.com/wp-content/uploads/2020/08/35285-1024x575.jpg' category='A NETFLIX ORIGINAL SERIES' title='SEX Education' link='https://www.netflix.com/in/' />  
   <NetflixCards imgsrc='https://images-na.ssl-images-amazon.com/images/I/51MmI%2BNl5DL._AC_.jpg' category='A NETFLIX ORIGINAL SERIES' title='Dark' link='https://www.netflix.com/in/' />  
