@@ -11,6 +11,7 @@ import Division from './Practice/Division';
 import Multiply from './Practice/Multiply';
 import Subtract from './Practice/Subtract';
 import NetflixCards from './Projects/NetflixCards';
+import sdata from './Practice/NetflixData';
 
 
 ReactDOM.render(
@@ -19,9 +20,11 @@ ReactDOM.render(
   // </React.StrictMode>
   <div>
   <h1 className='heading'>This is top-5 Netflix Series</h1>
-  <NetflixCards imgsrc='https://upload.wikimedia.org/wikipedia/en/2/22/TVD_cast.jpg' category='A NETFLIX ORIGINAL SERIES' title='The Vampire Dairies' link='https://www.netflix.com/in/' />  
-  <NetflixCards imgsrc='https://pdqwire.com/wp-content/uploads/2020/08/35285-1024x575.jpg' category='A NETFLIX ORIGINAL SERIES' title='SEX Education' link='https://www.netflix.com/in/' />  
-  <NetflixCards imgsrc='https://images-na.ssl-images-amazon.com/images/I/51MmI%2BNl5DL._AC_.jpg' category='A NETFLIX ORIGINAL SERIES' title='Dark' link='https://www.netflix.com/in/' />  
+  <NetflixCards imgsrc={sdata[0].imgsrc} category={sdata[0].category} title={sdata[0].title} link={sdata[0].link} />  
+  <NetflixCards imgsrc={sdata[1].imgsrc} category={sdata[1].category} title={sdata[1].title} link={sdata[1].link} />  
+  <NetflixCards imgsrc={sdata[2].imgsrc} category={sdata[2].category} title={sdata[2].title} link={sdata[2].link} />  
+  <NetflixCards imgsrc={sdata[3].imgsrc} category={sdata[3].category} title={sdata[3].title} link={sdata[3].link} />  
+  <NetflixCards imgsrc={sdata[4].imgsrc} category={sdata[4].category} title={sdata[4].title} link={sdata[4].link} />  
   </div>
   ,
   document.getElementById('root')
